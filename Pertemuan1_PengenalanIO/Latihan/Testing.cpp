@@ -15,4 +15,8 @@ int main ()
     cin >> nama; //jika namanya dispasi cuma bisa membaca satu kata
 
     return 0;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> fed2b7849008c000254e70cddf3a211f065ae2d9
