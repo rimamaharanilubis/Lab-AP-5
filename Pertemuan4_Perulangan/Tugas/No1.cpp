@@ -11,7 +11,7 @@ int main() {
     int bil=1; 
     for (i=1; i<=n; i++) {
         cout<<bil<<" ";
-        if (i%2 == 1){
+        if (i%2 == 1) {
             bil += 5; //ditambahkan 5(ganjil)
         } else {
             bil += 3; //ditambahkan 3(genap)

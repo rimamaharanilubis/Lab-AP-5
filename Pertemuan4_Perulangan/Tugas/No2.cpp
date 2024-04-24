@@ -3,26 +3,27 @@ using namespace std;
 
 int main() {
     system("CLS");
-    int tahun,awal,interval;
-
-    cout<<"Masukkan tahun awal: ";
-    cin>>awal;
-    cout<<endl<<"Masukkan interval tahun: ";
-    cin>>interval;
-    tahun = awal;
-
-    for (int i = 0; i <= interval; i++)
-    {
-        if (tahun % 4 == 0)
-        {
-            cout<<endl<<tahun<<" adalah tahun kabisat ";
-        } else
-        {
-            cout<<endl<<tahun<<" bukan tahun kabisat ";
-        }        
-    tahun++;
-    }
     
+    string kalimat;
+    char huruf;
+
+    cout<<"Masukkan sebuah kalimat: ";
+    getline(cin, kalimat);
+
+    cout<<"Masukkan sebuah huruf yang ingin dihapus: ";
+    cin>>huruf;
+    
+    int hapus;
+    for(char c: kalimat ) {
+        if (c != tolower(huruf) && c != toupper(huruf)) { //tolower= mengubah kalimat menjadi huruf kecil. toupper= mengubah kalimat menjadi huruf besar.
+            cout<<c;
+        } else {
+            hapus += 1;
+        }
+      }
+
+    cout<<endl;
+    cout<<endl<<"Karakter terhapus= "<<hapus;
 
     return 0;
 }
