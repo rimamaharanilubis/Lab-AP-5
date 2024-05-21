@@ -34,7 +34,7 @@ int main() {
     cin>>bil1>>bil2;
 
     //memilih oeparasi yang diinginkan
-    switch(operasi) {
+    switch(operasi){
         case '+':
             tambah(&bil1,&bil2);
             break;
